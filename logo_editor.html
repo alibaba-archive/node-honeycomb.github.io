@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<html xmlns:svg="http://www.w3.org/2000/svg">
+<body>
+
+  <svg id="svg" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+     width="300" height="300" viewbox="0 0 600 600">
+  </svg>
+  <script type="text/javascript">
+    function translate(str, x, y) {
+      let a = str.split(' ');
+      let b = [];
+      a.forEach((v) => {
+        let tmp = v.split(',');
+        tmp[0] = Number(tmp[0]);
+        tmp[1] = Number(tmp[1]);
+        b.push(Math.round(tmp[0] + x, 1) + ',' + Math.round(tmp[1] + y, 1));
+      });
+      return b.join(' ');
+    }
+
+    let base = '120,90 207,40 293,90 293,190 207,240 120,190';
+
+    function createNode(x, y, color) {
+      color = color || '#ccc';
+      let polygon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+      let points = translate(base, x, y);
+      polygon.setAttribute('points', points);
+      polygon.setAttribute('style', 'fill-opacity:0; stroke:' + color + ';stroke-width:6');
+      document.getElementById('svg').appendChild(polygon);
+    }
+    let offsets = [
+      [0, 0],
+      [94, 161, '#fc0'],
+      [-94, 161],
+      [0, 324],
+      [188, 324],
+      [188, 0],
+      // [283, 161]
+    ];
+    offsets.forEach((node) => {
+      createNode(node[0], node[1], node[2]);
+    });
+  </script>
+</body>
+</html>

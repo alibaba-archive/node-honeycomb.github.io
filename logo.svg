@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg id="svg" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <polygon points="120,90 207,40 293,90 293,190 207,240 120,190" style="fill:#ccc"></polygon><polygon points="214,251 301,201 387,251 387,351 301,401 214,351" style="fill:#fc0"></polygon><polygon points="26,251 113,201 199,251 199,351 113,401 26,351" style="fill:#ccc"></polygon><polygon points="120,414 207,364 293,414 293,514 207,564 120,514" style="fill:#ccc"></polygon><polygon points="308,414 395,364 481,414 481,514 395,564 308,514" style="fill:#ccc"></polygon><polygon points="308,90 395,40 481,90 481,190 395,240 308,190" style="fill:#ccc"></polygon></svg>
