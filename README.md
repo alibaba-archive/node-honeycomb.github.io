@@ -1,0 +1,3 @@
+# build doc
+
+make release

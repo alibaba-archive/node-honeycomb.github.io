@@ -5,27 +5,86 @@
     <title>Honeycomb - a micro app container</title>
     <style>
       body {
-        background-color: #fc0;
-        margin: 120px 50px;
-        font-family: "Helvetica Neu", "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei","Arial",sans-serif;
+        padding: 0px;
+        margin: 0px auto;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
         font-size: 20px;
       }
-      h1 {font-size: 48px;}
+      h1 {
+        font-size: 48px;
+      }
       a {
         text-decoration: none;
         color: #999;
       }
-    </style>
+      .inner {
+        width: 680px;
+        margin-left: 10%;
+      }
+      .part1 {
+        padding: 3% 0;
+        background-color: #fc0;
+        /* border-bottom: 2px solid #999; */
+      }
+      .nav {
+        background-color: #e9ecef;
+        line-height: 200%;
+      }
+      .nav a {
+        margin-right: 1.5em;
+        color: #555;
+      }
 
+      .feature ul {
+        color: #555;
+        list-style-type: square;
+        list-style-position: inside;
+        margin: 20px 0px;
+        padding: 0px;
+        line-height: 150%;
+      }
+    </style>
   </head>
   <body>
-    <h1>Honeycomb</h1>
-    <p>
-      a micro-app container for Node.js apps.
-    </p>
-    <p>
-      a easy way to build up product with micro apps</p>
-    <p style="color:#fff">Honeycomb: 2018-01</p>
-    <p><a href="https://github.com/node-honeycomb">Github Group</a></p>
+    <section class="part1">
+      <div class="inner">
+        <h1>Honeycomb</h1>
+        <p>
+          A micro-app container for Node.js apps. a easy way to build up product with micro apps.
+        </p>
+      </div>
+    </section>
+    <section class="nav">
+      <div class="inner">
+        <a href="/">Home</a>
+        <a href="/docs/zh_cn" target='_blank'>Document</a>
+        <a href="/Download" target="_blank">Download</a>
+        <a href="https://github.com/node-honeycomb">Github</a>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="inner">
+        <ul>
+          <li>micro-app管理，发布、回滚、重启、下线不在麻烦</li>
+          <li>便捷的配置管理，一套程序、不同环境不同配置</li>
+          <li>集成监控、日志查看，方便日常运维</li>
+          <li>支持集群管理，应用扩缩容</li>
+          <li>支持http/https/socket等常用协议，方便构建多层次的web应用</li>
+          <li>高性能、高可用</li>
+        </ul>
+        <p>
+          <a href="/docs/zh_cn" target='_blank'>> 详细请查看文档</a>
+        </p>
+      </div>
+    </section>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"  crossorigin="anonymous"></script>
+    <script>
+      $(function (){
+        window.addEventListener('resize', function () {
+          let h = document.documentElement.clientHeight;
+
+        });
+      })
+    </script>
   </body>
 </html>

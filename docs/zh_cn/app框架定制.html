@@ -1,0 +1,396 @@
+
+<!DOCTYPE HTML>
+<html lang=" zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>App框架定制 · honeycomb</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="运维管理.html" />
+    
+    
+    <link rel="prev" href="app开发.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="header-wrap">
+    <div class="header">
+        <div class="logo">
+            <h1>honeycomb</h1>
+        </div>
+        <div class="head">
+            <div class="menu"></div>
+            <div class="extra">
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+</div>
+        </div>
+    </div>
+</div>
+<div class="book">
+    <div class="book-summary">
+        
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Honeycomb简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="安装部署.html">
+            
+                <a href="安装部署.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="配置管理.html">
+            
+                <a href="配置管理.html">
+            
+                    
+                    配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="app开发.html">
+            
+                <a href="app开发.html">
+            
+                    
+                    App开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="app框架定制.html">
+            
+                <a href="app框架定制.html">
+            
+                    
+                    App框架定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="运维管理.html">
+            
+                <a href="运维管理.html">
+            
+                    
+                    运维管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="编程接口.html">
+            
+                <a href="编程接口.html">
+            
+                    
+                    编程接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="命令行工具.html">
+            
+                <a href="命令行工具.html">
+            
+                    
+                    命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="注意事项.html">
+            
+                <a href="注意事项.html">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <!-- <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li> -->
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="app&#x6846;&#x67B6;&#x5B9A;&#x5236;">App&#x6846;&#x67B6;&#x5B9A;&#x5236;</h2>
+<p>&#x5728;&#x4F7F;&#x7528;honeycomb&#x4F53;&#x7CFB;&#x65F6;&#xFF0C;&#x5E76;&#x4E0D;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x4F7F;&#x7528;honeybee&#x7684;&#x6846;&#x67B6;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x624B;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x56E2;&#x961F;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x4F1A;&#x6709;&#x73B0;&#x6709;&#x7684;&#x5E94;&#x7528;&#x6846;&#x67B6;&#x3002; Honeycomb&#x5E76;&#x4E0D;&#x9650;&#x5236;&#x5FC5;&#x987B;&#x4F7F;&#x7528;honeybee&#x6846;&#x67B6;&#xFF0C;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x51E0;&#x90E8;&#x5B9A;&#x5236;&#xFF0C;&#x73B0;&#x6709;&#x7684;&#x5E94;&#x7528;&#x5C31;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x8FD0;&#x884C;&#x5230;Honeycomb-server&#x4E2D;&#xFF0C;&#x5E76;&#x5177;&#x6709;&#x540C;&#x6837;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x901A;&#x8FC7;&#x672C;&#x7BC7;&#x4E2D;&#x63D0;&#x53CA;&#x7684;&#x5B8C;&#x6574;&#x7684;&#x5B9A;&#x5236;&#x8981;&#x70B9;&#xFF0C;&#x4F60;&#x7684;app&#x5C06;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x5B98;&#x65B9;&#x5F00;&#x6E90;&#x63D0;&#x4F9B; hc-express, hc-koa, hc-egg &#x4E09;&#x79CD;&#x5E38;&#x7528;&#x6846;&#x67B6;&#x7684;&#x5B9A;&#x5236;&#x7248;&#x672C;&#x3002;</p>
+<h3 id="1-packagemain-&#x6307;&#x5411;&#x5165;&#x53E3;&#x6587;&#x4EF6;">1. package.main &#x6307;&#x5411;&#x5165;&#x53E3;&#x6587;&#x4EF6;</h3>
+<p>app&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x5FC5;&#x987B;&#x5728;package.json&#x91CC;&#x9762;&#x6307;&#x5B9A;&#x3002;</p>
+<h3 id="2-app&#x914D;&#x7F6E;&#x5B9A;&#x5236;&#xFF1A;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x7AEF;&#x79C1;&#x6709;&#x914D;&#x7F6E;">2. app&#x914D;&#x7F6E;&#x5B9A;&#x5236;&#xFF1A;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x7AEF;&#x79C1;&#x6709;&#x914D;&#x7F6E;</h3>
+<p>app&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x4F1A;&#x4F20;&#x9012;&#x4EE5;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E2D;</p>
+<pre><code>let envConfig = process.env.HC_APP_CONFIG
+/**
+ * @type {Object}
+ * {
+ *   file: app&apos;s enter file
+ *   appId: appId
+ *   config:  app&apos;s private config,
+ *   serverRoot: honeycomb install root, // std cfg: serverRoot
+ *   serverEnv: serverEnv,  // std cfg: serverFlag
+ *   appRoot: appRoot,      // std cfg: appRoot
+ *   targetSock: targetSock which app listen to
+ * }
+ */
+envConfig = JSON.parse(envConfig);
+</code></pre><h3 id="3-app&#x5165;&#x53E3;&#x5B9A;&#x5236;&#xFF1A;&#x4FEE;&#x6539;&#x76D1;&#x542C;">3. app&#x5165;&#x53E3;&#x5B9A;&#x5236;&#xFF1A;&#x4FEE;&#x6539;&#x76D1;&#x542C;</h3>
+<pre><code>app.run = function (callback) {
+  server.listen(targetSock);
+
+    callback(null, {
+      bind: &apos;8999&apos;,
+      router: &apos;/example&apos;,
+      target: sock, // 
+      param: {
+        // nginx server section
+        server: {
+          ssl_certificate: path_to_crt.pem,
+          ssl_certificate_key: path_to_key.pem
+        },
+        // nginx location section
+        location: {
+          client_max_body_size: &apos;100m&apos;
+        }
+      }
+  });
+}
+</code></pre><h3 id="4-app&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#xFF1A;&#x652F;&#x6301;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;">4. app&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#xFF1A;&#x652F;&#x6301;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;</h3>
+<p>app&#x7684;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6293;&#x53D6;&#x6765;&#x81EA; $honeycomb_install_dir/logs/, &#x5E76;&#x6293;&#x53D6;&#x7279;&#x5F81;&#x4E3A;&#xFF1A;</p>
+<pre><code>xxxx.yyyy-mm-dd.log
+</code></pre><p>&#x7C7B;&#x4F3C;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;config&#x4E2D;&#x5B9A;&#x5236;&#x89C4;&#x5219;:</p>
+<pre><code>TODO server &#x5B9A;&#x5236;&#x89C4;&#x5219;
+</code></pre><p>&#x65E5;&#x5FD7;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x540C;&#x6837;&#x6709;&#x4E2A;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x662F;&#x4F7F;&#x7528;litelog&#x6765;&#x66FF;&#x6362;&#x73B0;&#x6709;log&#x3002;</p>
+<pre><code>const litelog = require(&apos;litelog&apos;);
+
+const log = litelog.create({
+  sys: {
+    file:
+    ratation: 
+  },
+  access: {
+
+  }
+});
+</code></pre><p>&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6765;&#x5B8C;&#x6210;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#x7684;&#x517C;&#x5BB9;:</p>
+<pre><code>TODO &#x65E5;&#x5FD7;&#x5B9A;&#x5236;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <!--<a href="app开发.html" class="navigation navigation-prev " aria-label="Previous page: App开发">
+                    <i class="fa fa-angle-left"></i>
+                </a> -->
+                
+                
+                <!-- <a href="运维管理.html" class="navigation navigation-next " aria-label="Next page: 运维管理">
+                    <i class="fa fa-angle-right"></i>
+                </a> -->
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"App框架定制","level":"1.5","depth":1,"next":{"title":"运维管理","level":"1.6","depth":1,"path":"运维管理.md","ref":"运维管理.md","articles":[]},"previous":{"title":"App开发","level":"1.4","depth":1,"path":"app开发.md","ref":"app开发.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search","-sharing","splitter","-theme-default","theme-mbook"],"root":"./","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search":{},"splitter":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-mbook":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"aliyun","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"honeycomb","language":" zh-cn","gitbook":"3.2.2","description":"new book","direction":"ltr"},"file":{"path":"app框架定制.md","mtime":"2018-01-18T06:53:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-19T08:48:07.120Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
