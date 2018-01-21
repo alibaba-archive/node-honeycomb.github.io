@@ -1,6 +1,6 @@
 {
   "title": "honeycomb",
-  "description": "new book",
+  "description": "honeycomb documents",
   "root": "./",
   "author": "",
   "isbn": "",
@@ -9,10 +9,6 @@
   "gitbook": "3.2.2",
   "plugins": [
     "search",
-    "-sharing",
-    "splitter",
-    "-theme-default",
     "theme-mbook"
-  ],
-  "theme": "aliyun"
+  ]
 }
