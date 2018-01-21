@@ -9,6 +9,8 @@
   "gitbook": "3.2.2",
   "plugins": [
     "search",
+    "-sharing",
+    "-theme-default",
     "theme-mbook"
   ]
 }
