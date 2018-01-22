@@ -2,6 +2,7 @@
   "title": "honeycomb",
   "description": "honeycomb documents",
   "root": "./",
+  "resDirName": "res_",
   "author": "",
   "isbn": "",
   "language": " zh-cn",
