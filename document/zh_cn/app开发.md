@@ -6,9 +6,9 @@ honeycomb支持三种类型的app:
 * socket server tcp协议的服务
 * daemon server 后台任务型server
 
-目前我们提供了与之配对的web app framework框架hc-express（npm中）
+目前我们提供了与之配对的app framework框架hc-bee（npm中）
 
-适配koa、egg框架的工作还在筹备中(hc-koa, hc-egg)，有兴趣可以参考[App框架定制章节]，一起参与进来
+适配exress、koa、egg框架的工作还在筹备中(hc-koa, hc-egg)，有兴趣可以参考[App框架定制章节]，一起参与进来
 
 ### 使用hc-express开发web app
 
