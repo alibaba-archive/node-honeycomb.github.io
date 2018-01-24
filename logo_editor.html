@@ -5,9 +5,18 @@
 <html xmlns:svg="http://www.w3.org/2000/svg">
 <body>
 
+  <div style="width: 300px; height: 300px; background-color: #f1f1f1;border-radius: 10px;">
   <svg id="svg" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
-     width="300" height="300" viewbox="0 0 600 600">
+     viewbox="0 0 600 600">
   </svg>
+  </div>
+  <p> </p>
+  <div style="width: 300px; height: 300px; background-color: #f1f1f1;border-radius: 10px;">
+  <svg id="svg2" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+     viewbox="0 0 220 220">
+     <polygon points="24,61 111,11 197,61 197,161 111,211 24,161" style="fill:#fc0; stroke:#fc0; stroke-width:1"></polygon>
+  </svg>
+  </div>
   <script type="text/javascript">
     function translate(str, x, y) {
       let a = str.split(' ');
@@ -23,22 +32,27 @@
 
     let base = '120,90 207,40 293,90 293,190 207,240 120,190';
 
+    // 正
+    // base = '113,78 200,28 286,78 286,178 200,228 113,178';
+
+    base = '143,78 230,28 316,78 316,178 230,228 143,178';
+
     function createNode(x, y, color) {
       color = color || '#ccc';
       let polygon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
       let points = translate(base, x, y);
       polygon.setAttribute('points', points);
-      polygon.setAttribute('style', 'fill-opacity:0; stroke:' + color + ';stroke-width:6');
+      polygon.setAttribute('style', `fill:${color}; stroke:${color}; stroke-width:1`);
       document.getElementById('svg').appendChild(polygon);
     }
     let offsets = [
-      [0, 0],
-      [94, 161, '#fc0'],
-      [-94, 161],
-      [0, 324],
-      [188, 324],
-      [188, 0],
-      // [283, 161]
+      [0, 0, '#bebfbf'],
+      [98, 170, '#fc0'],
+      [-98, 170, '#bebfbf'],
+      [0, 340, '#bebfbf'],
+      [198, 340, '#bebfbf'],
+      [198, 0, '#bebfbf'],
+      // [296, 170, '#bebfbf']
     ];
     offsets.forEach((node) => {
       createNode(node[0], node[1], node[2]);
