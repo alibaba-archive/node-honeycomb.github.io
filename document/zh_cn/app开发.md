@@ -106,6 +106,12 @@ honeycomb-cli 提供了打包命令
 ${package.name}_${version}_${build}.tgz
 ```
 
+***深入理解打包机制***
+
+`honeycomb package` 命令执行的时候，会调用本地Makefile中的 `make release`命令。
+
+
+
 ### 发布App
 
 打开console，选择要发布的集群，手动发布打包完的app包即可
