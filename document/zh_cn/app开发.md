@@ -48,7 +48,7 @@ package.json 必须配置的几个字段：
 ```
 
 
-### 调试App
+### 测试App
 
 编写完以上简单case，使用honeycomb-cli来启动本地调试：
 ```
@@ -56,6 +56,40 @@ package.json 必须配置的几个字段：
 > honeycomb start
 ```
 启动之后，就可以通过浏览器来测试服务了
+
+### 结合vscode调试
+
+honeycomb cli工具可以支持runtime debug。
+```shell
+> cd $app_root
+> honeycomb start --inspect
+```
+此时app启动inspect调试。关于inspect的细节，请参考官方[doc](https://nodejs.org/en/docs/inspector/)
+
+在vscode中，先切换到调试界面,MacOs使用快捷键cmd+shift+G,windows使用快捷键ctrl+shift+G。在左侧中选择`open launch.json`。参考如下
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "debug honeycomb",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229, //change if you know this
+            "localRoot": "${workspaceFolder}"
+        }
+    ]
+}
+```
+如果你想阅读vs node.js debug更详细的调试文档，移步[这里](https://go.microsoft.com/fwlink/?linkid=830387)
+配置完成，先启动应用
+```
+> honeycomb start --inspect
+```
+然后启动debug，开始调试，随心所欲打断点~~~
 
 
 ### 打包App
