@@ -1,0 +1,8 @@
+{
+  "main": "index.js",
+  "devDependencies": {
+    "gitbook-plugin-search": "*",
+    "gitbook-plugin-splitter": "*",
+    "gitbook-plugin-theme-mbook": "*"
+  }
+}
